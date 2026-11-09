@@ -9,5 +9,29 @@ package com.mycompany.testedehibernate;
  * @author aluno
  */
 public class UnidadeResgate {
+    @PrimaryKeyJoinColumn(name="id")
+    private Integer id;
+    @Column(name="unr_capacidade", unique = false, nullable = false)
+    private Integer capacidade;
+
+    public UnidadeResgate() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getCapacidade() {
+        return capacidade;
+    }
+
+    public void setCapacidade(Integer capacidade) {
+        this.capacidade = capacidade;
+    }
+    
     
 }

@@ -8,8 +8,8 @@
         <!-- Configurações do Banco de Dados (MySQL) -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/NomedoEsquema</property>
-        <property name="hibernate.connection.username">meu login</property>
-        <property name="hibernate.connection.password">minha senha</property>
+        <property name="hibernate.connection.username">Lupin</property>
+        <property name="hibernate.connection.password"></property>
 
         <!-- Dialeto SQL para MySQL 8 -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -20,6 +20,7 @@
 
         <!-- Cria/Atualiza as tabelas automaticamente no banco -->
         <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.mycompany.testedehibernate.Bombeiro"/>
        
     </session-factory>
 </hibernate-configuration>
